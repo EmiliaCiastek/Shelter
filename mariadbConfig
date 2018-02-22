@@ -1,0 +1,12 @@
+CREATE DATABASE IF NOT EXISTS shelter;
+
+CREATE USER 'shelter'@'localhost' IDENTIFIED BY 'shelter';
+
+GRANT ALL PRIVILEGES ON shelter.* TO 'shelter'@'localhost';
+
+flush privileges;
+exit;
+service mysql restart
+
+
+
