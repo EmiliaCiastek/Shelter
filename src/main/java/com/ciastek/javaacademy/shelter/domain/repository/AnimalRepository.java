@@ -9,4 +9,5 @@ public interface AnimalRepository {
     Animal getAnimalById(int id);
     void removeAnimal(Animal animal);
     void updateAnimal(Animal animal);
+    void addAnimal(Animal animal);
 }

@@ -42,4 +42,10 @@ public class DatabaseAnimalRepository implements AnimalRepository {
     public void updateAnimal(Animal animal) {
         throw new NotYetImplementedException();
     }
+
+    @Override
+    public void addAnimal(Animal animal) {
+        Session session = sessionFactory.getCurrentSession();
+        session.saveOrUpdate(animal);
+    }
 }
