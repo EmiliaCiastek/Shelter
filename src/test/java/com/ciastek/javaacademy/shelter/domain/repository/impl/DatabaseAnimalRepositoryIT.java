@@ -72,7 +72,7 @@ class DatabaseAnimalRepositoryIT {
 
         animal.setAge(12);
         animal.setDescription("Very friendly dog but he's getting old.");
-        repository.updateAnimal(animal);
+        repository.updateAnimal(1, animal);
         Animal actualAnimal = repository.getAnimalById(1);
 
         SoftAssertions soft = new SoftAssertions();

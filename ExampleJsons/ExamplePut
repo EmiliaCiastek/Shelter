@@ -1,0 +1,11 @@
+Animal update:
+
+http://localhost:8080/shelter/animals/1
+
+{
+	"id": 1,
+	"name": "Burek",
+	"description": "Description of Burek. He's an awesome dog!",
+	"species": 0,
+	"age": 4
+}

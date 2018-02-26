@@ -40,8 +40,8 @@ public class AnimalServiceImpl implements AnimalService {
     }
 
     @Override
-    public void updateAnimal(Animal animal) {
-        throw new NotImplementedException();
+    public void updateAnimal(int animalId, Animal animal) {
+        animalRepository.updateAnimal(animalId, animal);
     }
 
     @Override

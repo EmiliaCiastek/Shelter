@@ -10,6 +10,6 @@ public interface AnimalService {
     List<Animal> getAllAnimalsBySpecies(AnimalSpecies animalType);
     Animal getAnimalById(int id);
     void removeAnimal(Animal animal);
-    void updateAnimal(Animal animal);
+    void updateAnimal(int animalId, Animal animal);
     void addAnimal(Animal animal);
 }

@@ -49,7 +49,7 @@ public class DatabaseAnimalRepository implements AnimalRepository {
     }
 
     @Override
-    public void updateAnimal(Animal animal) {
+    public void updateAnimal(int animalId, Animal animal) {
         Session session = sessionFactory.getCurrentSession();
         session.update(animal);
     }
