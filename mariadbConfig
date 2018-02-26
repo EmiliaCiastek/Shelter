@@ -10,3 +10,14 @@ service mysql restart
 
 
 
+
+CREATE DATABASE IF NOT EXISTS shelterTest;
+
+GRANT ALL PRIVILEGES ON shelterTest.* TO 'shelter'@'localhost';
+
+flush privileges;
+exit;
+service mysql restart
+
+
+
