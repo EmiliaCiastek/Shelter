@@ -1,6 +1,7 @@
 package com.ciastek.javaacademy.shelter.controller;
 
 import com.ciastek.javaacademy.shelter.domain.Animal;
+import com.ciastek.javaacademy.shelter.domain.AnimalSpecies;
 import com.ciastek.javaacademy.shelter.service.AnimalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -44,5 +45,11 @@ public class AnimalController {
     @RequestMapping(method = RequestMethod.GET)
     public List<Animal> getAllAnimals() {
         return animalService.getAllAnimals();
+    }
+
+    @RequestMapping(value = "/byType/{animalType}", method = RequestMethod.GET)
+    public List<Animal> getAllAnimalsBySpecies(@PathVariable int animalType) {
+        AnimalSpecies animalSpecies = AnimalSpecies.values()[animalType];
+        return animalService.getAllAnimalsBySpecies(animalSpecies);
     }
 }

@@ -26,7 +26,7 @@ public class AnimalServiceImpl implements AnimalService {
 
     @Override
     public List<Animal> getAllAnimalsBySpecies(AnimalSpecies animalType) {
-        throw new NotImplementedException();
+        return animalRepository.getAllAnimalsBySpecies(animalType);
     }
 
     @Override

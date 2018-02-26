@@ -54,4 +54,12 @@ class AnimalServiceImplTest {
 
         verify(animalRepository, times(1)).getAllAnimals();
     }
+
+    @Test
+    void should_invoke_getAllAnimalsBySpecies_on_repository(){
+        AnimalSpecies species = AnimalSpecies.CHINCHILLA;
+        animalService.getAllAnimalsBySpecies(species);
+
+        verify(animalRepository, times(1)).getAllAnimalsBySpecies(species);
+    }
 }
