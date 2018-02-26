@@ -40,6 +40,11 @@ public class AnimalServiceImpl implements AnimalService {
     }
 
     @Override
+    public void removeAnimalById(int animalId) {
+        animalRepository.removeAnimalById(animalId);
+    }
+
+    @Override
     public void updateAnimal(int animalId, Animal animal) {
         animalRepository.updateAnimal(animalId, animal);
     }

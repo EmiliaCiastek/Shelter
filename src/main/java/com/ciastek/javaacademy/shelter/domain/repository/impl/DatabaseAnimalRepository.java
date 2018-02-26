@@ -49,6 +49,11 @@ public class DatabaseAnimalRepository implements AnimalRepository {
     }
 
     @Override
+    public void removeAnimalById(int animalId) {
+        removeAnimal(getAnimalById(animalId));
+    }
+
+    @Override
     public void updateAnimal(int animalId, Animal animal) {
         Session session = sessionFactory.getCurrentSession();
         session.update(animal);

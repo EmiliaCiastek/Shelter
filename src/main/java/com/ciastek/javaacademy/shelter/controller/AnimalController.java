@@ -32,4 +32,10 @@ public class AnimalController {
     public Animal getAnimalById(@PathVariable int animalId) {
         return animalService.getAnimalById(animalId);
     }
+
+    @RequestMapping(value = "/{animalId}", method = RequestMethod.DELETE)
+    @ResponseStatus(value = HttpStatus.OK)
+    public void removeAnimalById(@PathVariable int animalId) {
+        animalService.removeAnimalById(animalId);
+    }
 }
