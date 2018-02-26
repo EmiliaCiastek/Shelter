@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping(value = "animals")
 public class AnimalController {
@@ -37,5 +39,10 @@ public class AnimalController {
     @ResponseStatus(value = HttpStatus.OK)
     public void removeAnimalById(@PathVariable int animalId) {
         animalService.removeAnimalById(animalId);
+    }
+
+    @RequestMapping(method = RequestMethod.GET)
+    public List<Animal> getAllAnimals() {
+        return animalService.getAllAnimals();
     }
 }

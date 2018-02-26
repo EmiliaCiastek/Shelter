@@ -6,3 +6,41 @@ http://localhost:8080/shelter/animals
 	"species": 0,
 	"age": 3
 }
+
+
+
+    {
+        "id": 1,
+        "description": "Description of Burek. He's an awesome dog!",
+        "name": "Burek",
+        "species": "DOG",
+        "age": 4
+    },
+    {
+        "id": 2,
+        "description": "Description",
+        "name": "Zwierz",
+        "species": "GUINEA_PIG",
+        "age": 4
+    },
+    {
+        "id": 3,
+        "description": "Description",
+        "name": "Olek",
+        "species": "CHINCHILLA",
+        "age": 4
+    },
+    {
+        "id": 4,
+        "description": "Description",
+        "name": "Dino",
+        "species": "TURTLE",
+        "age": 4
+    },
+    {
+        "id": 5,
+        "description": "Description",
+        "name": "Wolololo",
+        "species": "PTERODACTYLUS",
+        "age": 4
+    }

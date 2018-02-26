@@ -47,4 +47,11 @@ class AnimalServiceImplTest {
 
         verify(animalRepository, times(1)).removeAnimalById(animalId);
     }
+
+    @Test
+    void should_invoke_getAllAnimals_on_repository(){
+        animalService.getAllAnimals();
+
+        verify(animalRepository, times(1)).getAllAnimals();
+    }
 }
