@@ -1,0 +1,8 @@
+http://localhost:8080/shelter/animals
+
+{
+	"name": "Burek",
+	"description": "Description of Burek",
+	"species": 0,
+	"age": 3
+}
