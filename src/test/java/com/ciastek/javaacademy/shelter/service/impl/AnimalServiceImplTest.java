@@ -24,11 +24,19 @@ class AnimalServiceImplTest {
     }
 
     @Test
-    public void should_should_invoke_update_on_repository(){
+    public void should_invoke_update_on_repository(){
         Animal animal = new Animal("Reksio", "Very friendly dog.", 10, AnimalSpecies.DOG);
         int animalId = 1;
         animalService.updateAnimal(animalId, animal);
 
         verify(animalRepository, times(1)).updateAnimal(animalId, animal);
+    }
+
+    @Test
+    public void should_invoke_getById_on_repository(){
+        int animalId = 1;
+        animalService.getAnimalById(animalId);
+
+        verify(animalRepository, times(1)).getAnimalById(animalId);
     }
 }

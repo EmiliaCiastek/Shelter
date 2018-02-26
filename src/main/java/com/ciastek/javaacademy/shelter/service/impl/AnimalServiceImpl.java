@@ -31,7 +31,7 @@ public class AnimalServiceImpl implements AnimalService {
 
     @Override
     public Animal getAnimalById(int id) {
-        throw new NotImplementedException();
+        return animalRepository.getAnimalById(id);
     }
 
     @Override

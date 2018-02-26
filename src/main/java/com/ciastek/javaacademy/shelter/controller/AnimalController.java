@@ -17,7 +17,7 @@ public class AnimalController {
     }
 
     @RequestMapping(method = RequestMethod.POST)
-    public Animal addAnimal(@RequestBody Animal animal){
+    public Animal addAnimal(@RequestBody Animal animal) {
         animalService.addAnimal(animal);
         return animal;
     }
@@ -26,5 +26,10 @@ public class AnimalController {
     @ResponseStatus(value = HttpStatus.NO_CONTENT)
     public void update(@PathVariable(value = "animalId") int animalId, @RequestBody Animal animal) {
         animalService.updateAnimal(animalId, animal);
+    }
+
+    @RequestMapping(value = "/{animalId}", method = RequestMethod.GET)
+    public Animal getAnimalById(@PathVariable int animalId) {
+        return animalService.getAnimalById(animalId);
     }
 }
