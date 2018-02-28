@@ -9,6 +9,6 @@ public class HomeController {
 
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String hello(){
-        return "Hello!";
+        return "Hello! Pieseły i koteły";
     }
 }

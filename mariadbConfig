@@ -21,3 +21,10 @@ service mysql restart
 
 
 
+CREATE TABLE animal(
+id INT NOT NULL ,
+age int,
+name VARCHAR(45),
+description longtext,
+species int,
+PRIMARY KEY (id) );
