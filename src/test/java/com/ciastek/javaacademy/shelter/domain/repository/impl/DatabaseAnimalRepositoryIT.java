@@ -4,7 +4,6 @@ import com.ciastek.javaacademy.shelter.domain.Animal;
 import com.ciastek.javaacademy.shelter.domain.AnimalSpecies;
 import com.ciastek.javaacademy.shelter.domain.repository.AnimalRepository;
 import org.assertj.core.api.SoftAssertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;

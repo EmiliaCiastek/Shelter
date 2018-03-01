@@ -52,5 +52,4 @@ public class AnimalController {
         AnimalSpecies animalSpecies = AnimalSpecies.values()[animalType];
         return animalService.getAllAnimalsBySpecies(animalSpecies);
     }
-
 }
